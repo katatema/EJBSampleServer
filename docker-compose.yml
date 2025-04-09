@@ -1,0 +1,11 @@
+services:
+  ejb:
+    image: bitnami/wildfly:33.0.2
+    ports:
+      - 8080:8080
+      - 9990:9990
+      - 8787:8787
+    environment:
+      WILDFLY_USERNAME: admin
+      WILDFLY_PASSWORD: adminadmin
+      WILDFLY_MANAGEMENT_LISTEN_ADDRESS: 0.0.0.0
